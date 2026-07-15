@@ -1,0 +1,2 @@
+# meal_at_home_notifier
+家族に家でご飯を食べるかどうかを自動で知らせるためにGASとAppleのショートカットで予定を自動取得して共有のGoogle Calenderにご飯情報を書き込みます。
