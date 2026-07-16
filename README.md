@@ -1,6 +1,6 @@
 # meal_at_home_notifier
 
-GASとAppleのショートカットで予定を自動取得してGoogle Calenderにその日のご飯を家で食べるか(ご飯の時間に外の予定が入っているか)を書き込みます。
+GASとAppleのショートカットで予定を自動取得してGoogle Calendarにその日のご飯を家で食べるか(ご飯の時間に外の予定が入っているか)を書き込みます。
 
 毎日「今日は家でご飯を食べるか」を家族に伝えるのが面倒でお互いが困っていたため開発しました。このプロジェクトは、カレンダーの予定をもとにそれを自動で判定して、Googleカレンダーに `【食事】昼：◯ / 夜：✕` のような形でまとめて反映してくれる、Apple Shortcuts と Google Apps Script (GAS) の小さな連携システムです。
 
@@ -26,7 +26,7 @@ GASとAppleのショートカットで予定を自動取得してGoogle Calender
 
 **2. Google Apps Script**
 
-1. `gas/main.gs` の内容を新しい Apps Script プロジェクトに貼り付けます。
+1. `main.js` の内容を新しい Apps Script プロジェクトに貼り付けます。
 2. 「プロジェクトの設定」→「スクリプト プロパティ」に以下を追加してください:
    - `MEAL_CALENDAR_ID`: 上で控えたカレンダーID
    - `API_TOKEN`: 任意のランダムな文字列（`openssl rand -hex 16` などで生成すると簡単です）
@@ -72,7 +72,7 @@ Create (or pick) a calendar to hold the meal events, and jot down its Calendar I
 
 **2. Google Apps Script**
 
-1. Paste the contents of `gas/main.gs` into a new Apps Script project.
+1. Paste the contents of `main.js` into a new Apps Script project.
 2. Under **Project Settings → Script Properties**, add:
    - `MEAL_CALENDAR_ID`: the calendar ID from step 1
    - `API_TOKEN`: a random secret string (generating one with `openssl rand -hex 16` works nicely)
