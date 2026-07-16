@@ -34,7 +34,7 @@ GASとAppleのショートカットで予定を自動取得してGoogle Calender
 
 **3. Apple Shortcuts**
 
-1. 本リポジトリの iCloud リンクからショートカットをインストールします。
+1. [こちらの iCloud リンク](https://www.icloud.com/shortcuts/e446488ad97844a185d781934db77fb7)からショートカットをインストールします。
 2. 「Get contents of URL」アクションのURL欄に、先ほど発行したGASのWebアプリURLを入力します。
 3. JSONを組み立てている「Text」アクション内の `"token"` の値に、`API_TOKEN` と同じ文字列を入力します。
 
@@ -80,7 +80,7 @@ Create (or pick) a calendar to hold the meal events, and jot down its Calendar I
 
 **3. Apple Shortcuts**
 
-1. Install the Shortcut from the iCloud link in this repo.
+1. Install the Shortcut from [this iCloud link](https://www.icloud.com/shortcuts/e446488ad97844a185d781934db77fb7).
 2. In the **Get contents of URL** action, set the URL to the GAS web app URL from step 2.
 3. In the **Text** action that builds the JSON body, set the `"token"` value to match your `API_TOKEN`.
 
